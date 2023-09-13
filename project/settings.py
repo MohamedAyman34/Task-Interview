@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'User',
+    'rest_framework',
+    'dj_rest_auth',
+    'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -141,7 +145,8 @@ EMAIL_HOST_PASSWORD = 'udohmaqsekbekxnt'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# REST_AUTH = {
-#     'USE_JWT': True,
-#     'JWT_AUTH_COOKIE': 'jwt-auth',
-# }
+REST_AUTH = {
+    'USE_JWT': True,
+    'JWT_AUTH_COOKIE': 'jwt-auth',
+}
+
